@@ -1,0 +1,84 @@
+/**** Base styles ****/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+h1{
+	text-align: center;
+	margin: 20px;
+}
+
+.menu-item{
+	border: 2px solid black;
+	margin: 10px;
+	background-color: #84868a;
+	padding: 0;
+	position:relative;
+}
+
+.menu-item p{
+	clear:right;
+	padding: 10px;
+}
+
+.row{
+	padding: 0 5px;
+	width:100%;
+}
+
+.menu-item-name{
+	float:right;
+	position: relative;
+	border: 1px solid black;
+	/*padding: 2px 20px 2px 20px;*/
+	text-align: center;
+	top:-1px;
+	right:-1px;
+	font-size:1.5em;
+	width: 25%;
+}
+
+
+/**** Large devices only ****/
+
+@media(min-width: 992px){
+	.col-lg-4{
+			float:left;
+		}
+	.col-lg-4{
+		width:33.33%;
+	}
+}
+
+/**** Tablet devices ****/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		width:50%;
+		float:left;
+	}
+	.col-md-12{
+		width:100%;
+		float:left;
+	}
+
+	#item-3{
+		width:12.5%;
+	}
+	
+}
+
+#item-1{
+	background-color: #d186c8;
+}
+
+#item-2{
+	background-color: #c23519;
+}
+#item-3{
+	background-color: #e3de52;
+}
+
